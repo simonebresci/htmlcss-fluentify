@@ -4,6 +4,15 @@
   margin:0;
 }
 
+
+/* Imposto larghezza dei contenuti in un unico posto*/
+.header-top-content, .header-bottom-content, .main-content, .select-plan-content{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid orange;
+}
+
+
 .header-top{
   width: 100%;
   height: 100vh;
@@ -11,17 +20,30 @@
   color: white;
 }
 
+.header-top-content{
+  height: 100%;
+}
+
 .header-bottom{
   height: 100px;
   background-color: rgb(211,211,211);
 }
 
+.header-bottom-content{
+  height: 100%;
+}
+
 
 .main-content{
   height: 1200px;
+
 }
 
 .select-plan{
   height: 100px;
   background-color: rgb(211,211,211);
+}
+
+.select-plan-content{
+  height:100%;
 }
