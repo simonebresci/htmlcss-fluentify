@@ -21,16 +21,26 @@
   padding: 10px 10px;
 }
 
+.block{
+  display: block;
+}
+
+/* .font-size-standard{
+  font-size: 11px;
+} */
+
+/* /UTILITIES */
 
 /* Imposto larghezza dei contenuti in un unico posto*/
 .header-top-content, .header-bottom-content, .main-content, .select-plan-content{
   width: 80%;
   margin: 0 auto;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 
 .header-top{
+  position: relative;
   width: 100%;
   height: 100vh;
   background-color: rgb(12,50,90);
@@ -69,7 +79,7 @@
   transform: translate(0%,-50%);
 }
 
-.header-top-bar a {
+.header-top-bar a, .slogan a{
   text-decoration: none;
   color: white;
 
@@ -97,18 +107,21 @@
 }
 
 
-/* .header-top-sfondo{
-  position: absolute;
-  bottom:0px;
-  right: 0px;
-  width: 60vw;
-  height: 60vh;
-  border: 1px solid white;
-  background-image: url("../img/sfondo-header.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 
-} */
+
+.header-top-sfondo{
+  position: absolute;
+  bottom:0%;
+  left: 30%;
+  /* transform: translate(-100%;-100%); */
+  width: 70%;
+  height: 80%;
+  background-image: url("../img/sfondo-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 1px solid white; */
+
+}
 
 .header-bottom{
   height: 100px;
@@ -116,9 +129,22 @@
 }
 
 .header-bottom-content{
+  position: relative;
   height: 100%;
 }
 
+.slogan{
+  width: 50%;
+  /* Centra in verticale */
+  position: absolute;
+  left: 0%;
+  top:30%;
+  transform: translate(0%;-50%);
+  /* /Centra in verticale */
+
+  font-size: 64px;
+  line-height: 100px;
+}
 
 .main-content{
   height: 1200px;
