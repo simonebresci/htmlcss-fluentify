@@ -4,6 +4,23 @@
   margin:0;
 }
 
+/* UTILITIES */
+.float{
+  float: left;
+}
+
+.transparent-button{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.green-button{
+  background-color: rgb(124,187,2);
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
 
 /* Imposto larghezza dei contenuti in un unico posto*/
 .header-top-content, .header-bottom-content, .main-content, .select-plan-content{
@@ -20,9 +37,78 @@
   color: white;
 }
 
+.header-top-bar{
+  height: 5vh;
+}
+
 .header-top-content{
+  position: relative;
   height: 100%;
 }
+
+.header-top-colonna1{
+  position: relative;
+  height: 100%;
+  width: 15%;
+}
+
+.header-top-colonna2{
+  width: 50%;
+  height: 100%;
+}
+
+.header-top-colonna3{
+  width: 35%;
+  height: 100%;
+}
+
+.logo{
+  position: absolute;
+  left:0%;
+  top:50%;
+  transform: translate(0%,-50%);
+}
+
+.header-top-bar a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.header-top-bar a:hover {
+  color: white;
+  background: rgba(0,0,0,0.2);
+}
+
+
+
+.header-top-bar ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+.header-top-bar ul li{
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 5vh;
+  padding-right: 20px;
+  /* border: 1px solid white; */
+}
+
+
+/* .header-top-sfondo{
+  position: absolute;
+  bottom:0px;
+  right: 0px;
+  width: 60vw;
+  height: 60vh;
+  border: 1px solid white;
+  background-image: url("../img/sfondo-header.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+} */
 
 .header-bottom{
   height: 100px;
