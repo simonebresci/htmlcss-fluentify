@@ -1,3 +1,5 @@
+/* clearfix! */
+
 *{
   box-sizing: border-box;
   padding:0;
@@ -5,10 +7,39 @@
 }
 
 /* UTILITIES */
-.float{
+.float-l{
   float: left;
 }
 
+.riga-1, .riga-2{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border: 5px solid green;
+}
+
+/* Colonna 3 parti */
+.colonna-3p{
+  width: calc(75% / 3);
+  height: 300px;
+}
+
+.colonna-3p img{
+  width: 100px;
+}
+
+.colonna-3p h3{
+  color: green;
+}
+
+.colonna-3p hr{
+  width: 25px;
+}
+
+/* Colonna 2 parti */
+.colonna-2p{
+  width: 50%;
+}
 .transparent-button{
   border: 1px solid white;
   border-radius: 5px;
@@ -25,6 +56,12 @@
   display: block;
 }
 
+.clearfix{
+  content:"";
+  display: table;
+  clear:both;
+}
+
 /* .font-size-standard{
   font-size: 11px;
 } */
@@ -36,8 +73,14 @@
   width: 80%;
   margin: 0 auto;
   border: 1px solid orange;
+  min-width: 1200px;
 }
 
+
+.header-top .content{
+  border: 2px solid violet;
+  height: 100vh;
+}
 
 .header-top{
   position: relative;
@@ -115,9 +158,10 @@
   left: 30%;
   /* transform: translate(-100%;-100%); */
   width: 70%;
-  height: 80%;
+  height: 60%;
   background-image: url("../img/sfondo-header.png");
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom right;
   background-repeat: no-repeat;
   /* border: 1px solid white; */
 
@@ -126,6 +170,7 @@
 .header-bottom{
   height: 100px;
   background-color: rgb(211,211,211);
+  text-align: center;
 }
 
 .header-bottom-content{
