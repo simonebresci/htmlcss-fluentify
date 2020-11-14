@@ -11,30 +11,9 @@
   float: left;
 }
 
-.riga-1, .riga-2{
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  border: 5px solid green;
-}
 
-/* Colonna 3 parti */
-.colonna-3p{
-  width: calc(75% / 3);
-  height: 300px;
-}
 
-.colonna-3p img{
-  width: 100px;
-}
 
-.colonna-3p h3{
-  color: green;
-}
-
-.colonna-3p hr{
-  width: 25px;
-}
 
 /* Colonna 2 parti */
 .colonna-2p{
@@ -202,6 +181,30 @@
   height: 1200px;
 
 } */
+
+.riga-1, .riga-2{
+  text-align: center;
+}
+
+
+/* Colonna 3 parti */
+.colonna-3p{
+  width: calc(100% / 3);
+  height: 300px;
+}
+
+.colonna-3p img{
+  width: 100px;
+}
+
+.colonna-3p h3{
+  color: green;
+}
+
+.colonna-3p hr{
+  width: 25px;
+}
+
 
 .select-plan{
   height: 100px;
