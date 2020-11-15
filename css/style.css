@@ -49,12 +49,13 @@
 
 /* /UTILITIES */
 
-/* Imposto larghezza dei contenuti in un unico posto*/
-.content, .header-top-content, .header-bottom-content, .main-content, .select-plan-content{
+.content, .header-top, .header-bottom, .select-plan{
+  min-width: 1400px;
+}
+
+.content {
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid orange; */
-  min-width: 1400px;
 }
 
 
