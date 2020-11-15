@@ -1,12 +1,14 @@
-/* clearfix! */
-
+/* Inizializzazione foglio HTML */
 *{
   box-sizing: border-box;
   padding:0;
   margin:0;
 }
+/* /Inizializzazione foglio HTML */
 
-/* UTILITIES */
+/* UTILITIES & COMMON SETTINGS*/
+
+/* Float a sinistra */
 .float-l{
   float: left;
 }
@@ -16,12 +18,14 @@
   width: 50%;
 }
 
+/* Transparent button */
 .transparent-button{
   border: 1px solid white;
   border-radius: 5px;
   padding: 10px 10px;
 }
 
+/* Green button */
 .green-button{
   background-color: rgb(124,187,2);
   border-radius: 5px;
@@ -29,145 +33,19 @@
   font-size: 16px;
 }
 
-.block{
-  display: block;
-}
-
-.clearfix{
-  content:"";
-  display: table;
-  clear:both;
-}
-
-/* .font-size-standard{
-  font-size: 11px;
-} */
-
-/* /UTILITIES */
-
-.content, .header-top, .header-bottom, .select-plan{
-  min-width: 1400px;
-}
-
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
-
-
-.header-top .content{
-  height: 100vh;
-}
-
-.header-top{
-  position: relative;
-  width: 100%;
-  min-width:1400px;
-  height: 100vh;
-  background-color: rgb(12,50,90);
-  color: white;
-  padding-top:20px;
-}
-
-.header-top-bar{
-  height: 5vh;
-}
-
-.header-top-content{
-  position: relative;
-  height: 100%;
-}
-
-.header-top-colonna1{
-  position: relative;
-  height: 100%;
-  width: 15%;
-}
-
-.header-top-colonna2{
-  width: 50%;
-  height: 100%;
-}
-
-.header-top-colonna3{
-  width: 35%;
-  height: 100%;
-}
-
-.logo{
-  position: absolute;
-  left:0%;
-  top:50%;
-  transform: translate(0%,-50%);
-}
-
-.header-top-bar a, .slogan a{
-  text-decoration: none;
-  color: white;
-
-}
-
-.header-top-bar a:hover {
-  color: white;
-  background: rgba(0,0,0,0.2);
-}
-
-
-
-.header-top-bar ul{
-  text-decoration: none;
-  list-style: none;
-}
-
-.header-top-bar ul li{
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  /* line-height: 5vh; */
-  line-height: 50px;
-  padding-right: 20px;
-  /* border: 1px solid white; */
-}
-
-
-
-
-.header-top-sfondo{
-  position: absolute;
-  bottom:0%;
-  left: 30%;
-  /* transform: translate(-100%;-100%); */
-  width: 70%;
-  height: 60%;
-  background-image: url("../img/sfondo-header.png");
-  background-size: contain;
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  /* border: 1px solid white; */
-
-}
-
-.header-bottom{
-  height: 125px;
-  background-color: rgb(211,211,211);
-  text-align: center;
-}
-
-.header-bottom-content{
-  position: relative;
-  height: 100%;
-}
-
+/* h2 personalizzato */
 .content h2{
   font-size: 32px;
   padding-top: 20px;
 }
 
+/* h3 personalizzato */
 .content h3{
   font-size: 32px;
   min-height: 75px;
 }
 
+/* h3 personalizzato */
 .content p{
   padding: 10px 0;
   font-size: 24px;
@@ -175,7 +53,133 @@
   color: #8a8a8a;
 }
 
+/* Display block - rendi elemento block */
+.block{
+  display: block;
+}
 
+/* Clearfix */
+.clearfix{
+  content:"";
+  display: table;
+  clear:both;
+}
+
+/* /UTILITIES */
+
+/* Imposta min-width per il resize corretto pagina */
+.content, .header-top, .header-bottom, .select-plan{
+  min-width: 1400px;
+}
+
+/* Stabilisci la larghezza dei contenuti del sito */
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Mostra prima pagina in full screen */
+.header-top .content{
+  height: 100vh;
+}
+
+/* Header-top */
+.header-top{
+  position: relative;
+  width: 100%;
+  background-color: rgb(12,50,90);
+  color: white;
+  padding-top:20px;
+}
+
+/* Header top bar con altezza fissa */
+.header-top-bar{
+  /* height: 5vh; */ /* Non consigliato utilizzare vh */
+  height: 50px;
+
+}
+
+/* Header top colonna 1 */
+.header-top-colonna1{
+  position: relative;
+  height: 100%;
+  width: 15%;
+}
+
+/* Header top colonna 2 */
+.header-top-colonna2{
+  width: 50%;
+  height: 100%;
+}
+
+/* Header top colonna 3 */
+.header-top-colonna3{
+  width: 35%;
+  height: 100%;
+}
+
+/* Logo aziendale */
+.logo{
+  position: absolute;
+  left:0%;
+  top:50%;
+  transform: translate(0%,-50%);
+}
+
+/* RESET STILE LINK NELLA TOP BAR */
+
+/* Reset Link */
+.header-top-bar a, .slogan a{
+  text-decoration: none;
+  color: white;
+}
+/* Reset animazione passaggio mouse */
+.header-top-bar a:hover {
+  color: white;
+  background: rgba(0,0,0,0.2);
+}
+/* Reset lista */
+.header-top-bar ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Reset elemento lista */
+.header-top-bar ul li{
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 50px;
+  padding-right: 20px;
+}
+/* /RESET STILE LINK NELLA TOP BAR */
+
+/* Header top sfondo */
+.header-top-sfondo{
+  /* Posizione sfondo - aggancio in basso a destra */
+  position: absolute;
+  bottom:0%;
+  left: 30%;
+  width: 70%;
+  height: 60%;
+  background-image: url("../img/sfondo-header.png");
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+/* /Header top sfondo */
+
+
+/* Header bottom */
+.header-bottom{
+  height: 125px;
+  background-color: rgb(211,211,211);
+  text-align: center;
+}
+
+
+
+/* Contenitore di aiuto per posizionamento slogan */
 .relative{
   position: relative;
   width: 100%;
@@ -187,8 +191,9 @@
 .relative .green-button{
   padding: 30px;
 }
+/* /Contenitore di aiuto per posizionamento slogan */
 
-
+/* Slogan in prima pagina */
 .slogan{
   width: 45%;
   /* Centra in verticale */
@@ -202,12 +207,9 @@
   font-weight: bold;
   line-height: 100px;
 }
+/* /Slogan in prima pagina */
 
-/* .main-content{
-  height: 1200px;
-
-} */
-
+/* Righe di contenuto del main */
 .riga-1, .riga-2{
   text-align: center;
   padding: 50px 0px
@@ -216,14 +218,17 @@
 .riga-1{
   border-bottom: 1px solid #8a8a8a;
 }
+/* /Righe di contenuto del main */
 
 
+/* Contenitore immagine - altezza fissa 128px */
 .icon-container-128{
   height: 128px;
   display: inline-block;
 }
+/* /Contenitore immagine - altezza fissa 128px */
 
-/* Colonna 3 parti */
+/* Personalizzazione colonna 3 parti */
 .colonna-3p{
   width: calc(100% / 3);
   height: 500px;
@@ -244,10 +249,12 @@
   text-align: center;
   margin: 20px 0;
   width: 75px;
-
 }
 
+/* /Personalizzazione colonna 3 parti */
 
+
+/* Riga-2 personalizzazione */
 .riga-2 .colonna-2p:first-child{
   text-align: right;
   padding-right: 50px;
@@ -258,7 +265,9 @@
   padding-left: 50px;
   width: 35%;
 }
+/* /Riga-2 personalizzazione */
 
+/* Contenitore immagine - altezza fissa 512px */
 .img-container-512{
   height: 512px;
 }
@@ -266,8 +275,7 @@
 .img-container-512 img{
   height: 512px;
 }
-
-
+/* /Contenitore immagine - altezza fissa 512px */
 
 
 /* .select-plan{
