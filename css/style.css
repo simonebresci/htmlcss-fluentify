@@ -11,10 +11,6 @@
   float: left;
 }
 
-
-
-
-
 /* Colonna 2 parti */
 .colonna-2p{
   width: 50%;
@@ -274,15 +270,11 @@
 
 
 
-.select-plan{
+/* .select-plan{
   height: 125px;
   background-color: rgb(211,211,211);
 }
 
 .select-plan .content{
   padding:20px 0;
-}
-
-/* .select-plan-content{
-  height:100%;
 } */
