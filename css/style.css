@@ -20,8 +20,6 @@
   width: 50%;
 }
 
-
-
 .transparent-button{
   border: 1px solid white;
   border-radius: 5px;
@@ -32,6 +30,7 @@
   background-color: rgb(124,187,2);
   border-radius: 5px;
   padding: 10px 10px;
+  font-size: 16px;
 }
 
 .block{
@@ -70,6 +69,7 @@
   height: 100vh;
   background-color: rgb(12,50,90);
   color: white;
+  padding-top:20px;
 }
 
 .header-top-bar{
@@ -151,7 +151,7 @@
 }
 
 .header-bottom{
-  height: 100px;
+  height: 125px;
   background-color: rgb(211,211,211);
   text-align: center;
 }
@@ -162,11 +162,19 @@
 }
 
 .content h2{
+  font-size: 32px;
   padding-top: 20px;
+}
+
+.content h3{
+  font-size: 32px;
+  min-height: 75px;
 }
 
 .content p{
   padding: 10px 0;
+  font-size: 24px;
+  line-height: 32px;
   color: #8a8a8a;
 }
 
@@ -179,8 +187,13 @@
   /* border: 1px solid white; */
 }
 
+.relative .green-button{
+  padding: 30px;
+}
+
+
 .slogan{
-  width: 50%;
+  width: 45%;
   /* Centra in verticale */
   position: absolute;
   left:0%;
@@ -189,6 +202,7 @@
   /* /Centra in verticale */
 
   font-size: 64px;
+  font-weight: bold;
   line-height: 100px;
 }
 
@@ -199,7 +213,7 @@
 
 .riga-1, .riga-2{
   text-align: center;
-  padding: 20px 0px
+  padding: 50px 0px
 }
 
 .riga-1{
@@ -215,7 +229,7 @@
 /* Colonna 3 parti */
 .colonna-3p{
   width: calc(100% / 3);
-  height: 400px;
+  height: 500px;
   padding: 0px 20px;
 }
 
@@ -245,7 +259,7 @@
 .riga-2 .colonna-2p:nth-child(2){
   text-align: left;
   padding-left: 50px;
-  width: 25%;
+  width: 35%;
 }
 
 .img-container-512{
@@ -260,7 +274,7 @@
 
 
 .select-plan{
-  height: 100px;
+  height: 125px;
   background-color: rgb(211,211,211);
 }
 
